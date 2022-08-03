@@ -2,15 +2,19 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
-web/app/themes/twentytwentytwo/
+web/app/themes/*
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
+web/app/languages/*
 
 # WordPress
 web/wp
 web/.htaccess
+
+# Wordfence
+web/app/wflogs/
 
 # Logs
 *.log

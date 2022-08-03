@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a04779580b7d5055fbb8f3857462c61",
+    "content-hash": "1b70e6a5d5db5ffb27ee53576fc3f82e",
     "packages": [
         {
             "name": "composer/installers",
@@ -1090,6 +1090,33 @@
             "time": "2021-12-12T23:22:04+00:00"
         },
         {
+            "name": "wordpress/twentytwentyone",
+            "version": "1.6",
+            "dist": {
+                "type": "zip",
+                "url": "web/packages/twentytwentyone.1.6.zip"
+            },
+            "type": "wordpress-theme"
+        },
+        {
+            "name": "wpackagist-plugin/wordfence",
+            "version": "7.6.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordfence/",
+                "reference": "tags/7.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordfence.7.6.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordfence/"
+        },
+        {
             "name": "wpackagist-theme/twentytwentytwo",
             "version": "1.2",
             "source": {
@@ -1106,6 +1133,19 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentytwentytwo/"
+        },
+        {
+            "name": "you/your-theme",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "web/packages/your-theme",
+                "reference": "464ec6dc5aa8b1ae2cc6e74eefdffcb7e1d0f381"
+            },
+            "type": "wordpress-theme",
+            "transport-options": {
+                "relative": true
+            }
         }
     ],
     "packages-dev": [
@@ -1584,6 +1624,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "you/your-theme": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
